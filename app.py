@@ -7,7 +7,7 @@ st.title('Revenue Prediction')
 a = st.number_input('Input Temperature')
 if st.button('Predict'):
     a = np.array(a).reshape(-1,1)
-    df = pd.read_csv(r'C:\Users\Admin\Downloads\emhuy\IceCreamData.csv')
+    df = pd.read_csv('IceCreamData.csv')
     df.head()
     x = df['Temperature'].values
     y = df['Revenue'].values
