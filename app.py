@@ -16,4 +16,5 @@ if st.button('Predict'):
     x = x.reshape(-1,1)
     model.fit(x, y)
     y_pred = model.predict(a)
+    st.caption('Revenue Prediction')
     st.success(y_pred)
