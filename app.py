@@ -18,7 +18,7 @@ if st.button('Predict'):
     a = np.array(a).reshape(-1,1)
     y_pred = model.predict(a)
     st.caption('Revenue Prediction')
-    st.success(y_pred)
+    st.success(*y_pred)
 filename = 'my-second-streamlit-app-main'
 pickle.dump(model, open(filename, "wb"))
 model = pickle.load(open(filename, "rb"))
